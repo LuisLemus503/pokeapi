@@ -1,34 +1,66 @@
-<!Doctype HTML>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport " content="width=device-width,intial-scale=1.0">
-        <title>Centro pokemon</title>
-        <link rel="stylesheet" href="estilos.css">
-        <!-- CSS only -->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <h1 class="title">Centro </h1>
-        <div class="pokemon-container">
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <!--Menu de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+        <a class="navbar-brand text-dark" href="index.html">Mundo pokemon</a>
+        <a href="https://www.pokemon.com/el/"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSdRKOBteZ27eUR1APw8FistZBxTIv7xIDC8o6Iq-KaYBMif2z1ciouLd49zS3_u3A47k&usqp=CAU"
+                width="50" height="40" alt=""></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-dark" href="index.html">Inicio <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="https://www.pokemon.com/el/">Noticias oficiales</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <!----Banner-->
+    <img src="https://jazwaresv2.s3.amazonaws.com/media/ATG002074_2022_POK_JazBanner.jpg" class="banner mt-4">
+
+   <!---Contendor de los pokemon--> 
+    <div class="pokemon-contenedor">
+    </div>
+
+    <!---Botones-->
+    <nav class="pagination" aria-label="...">
+        <ul class="pagination">
+            <li class="page-item" id="previous">
+                <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item" id="next">
+                <a class="page-link" href="#">Mas pokemon</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="spinner" class="spinner-border text-red" role="status">
+        <span class="visually-hidden">Cargando</span>
+    </div>
 
 
+    <script src="main.js"></script>
 
+</body>
 
-
-
-
-
-
-
-
-
-
-        <script src="./main.js"></script>
-        <!-- JavaScript Bundle with Popper -->
-        
-    </body>
 </html>
